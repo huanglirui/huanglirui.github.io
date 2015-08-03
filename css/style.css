@@ -951,9 +951,9 @@ article .article-content p code,
 article .article-content strong code,
 article .article-content em code {
   font-family: Monaco, Menlo, Consolas, Courier New, monospace;
-  background: #eee;
+  background: #000;
   color: #747070;
-  border: 1px solid #d6d6d6;
+  border: 1px solid #000;
   padding: 0 5px;
   margin: 0 2px;
   font-size: 90%;
@@ -1368,7 +1368,7 @@ section.comment {
   margin: 1em 0;
 }
 .toc-article {
-  background: #eee;
+  background: #000;
   margin: 2em 0 0 0.5em;
   padding: 1em;
 }
