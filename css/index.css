@@ -33,9 +33,9 @@ body {
 }
 .clearfix:after {
   content: '';
-  clear: both;
   display: block;
   height: 0;
+  clear: both;
 }
 /*容器*/
 .container {
@@ -77,25 +77,25 @@ section {
   font-size: 36px;
 }
 .e-name h1 b {
+  padding-bottom: 5px;
   font-weight: bold;
   color: #333;
   border-bottom: 1px dashed #999;
-  padding-bottom: 5px;
 }
 .e-name h1 b.green {
   color: #5ab632;
 }
 /*树形图*/
 .e-tree {
-  height: 200px;
+  min-height: 200px;
 }
 /*树形图第一层*/
 .e-layer1 .avatar {
   float: right; 
+  padding: 5px;
+  margin-right: 50px;
   background: #5ab632;
   border-radius: 50%;
-  margin-right: 100px;
-  padding: 5px;
   vertical-align: middle;
 }
 
@@ -109,7 +109,8 @@ section {
   height: 100%;
   border-right: 2px solid #5ab632;
 }
-.e-layer2 .mine .data {
+.e-layer2 .mine .date {
+  margin-top: 40px;
   font-weight: normal;
   font-size: 22px;
   color: #5ab632;
@@ -120,34 +121,51 @@ section {
   color: #333;
 }
 .e-layer2 .mine .big-mark {
+  position: absolute;
+  top: 45px;
+  left: 152px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 152px;
   background: url('../img/icon01.gif');
 }
 .e-layer2 .mine .small-mark {
+  position: absolute;
+  top: 50px;
+  left: 175px;
   width: 15px;
   height: 14px;
   border-radius: 50%;
-  position: absolute;
-  top: 10px;
-  left: 175px;
   background: url('../img/icon02.gif');
 }
 .e-layer2 .content {
-  position: absolute;
-  right: 0;
-  width: 400px;
-  height: 100px;
-  border: 1px solid green;
+  width: 500px;
+  padding: 10px;
+  margin-left: 280px; 
+  border: 3px solid #5ab632;
+  border-radius: 10px;
+  box-shadow: 1px 10px 10px #ddd; 
 }
-
+.e-layer2 .content li {
+  margin: 5px 0;
+  color: #333;
+}
+.e-layer2 .content li h2 {
+  display: inline-block;
+}
+.e-layer2 .content li span {
+  display: inline-block;
+  font-size: 16px;
+  margin: -23px 0 0 20px;
+} 
 /*页脚*/
 footer {
-  margin: 20px;
+  margin: 100px;
+  text-align: center;
+}
+footer span {
+  font-size: 14px;
+  color: #333;
 }
 
 
