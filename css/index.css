@@ -22,7 +22,7 @@ html, body {
   font-size: 12px;
 }
 html {
-  overflow-x: hidden;
+  overflow-y: scroll;
 }
 body {
   background: url('../img/bg.png');
@@ -33,38 +33,40 @@ body {
 }
 .clearfix:after {
   content: '';
-  display: block;
-  height: 0;
+  display: table;
   clear: both;
 }
 /*容器*/
 .container {
   width: 980px;
+  height: auto;
   margin: 0 auto;
 }
 /*头部导航*/
-nav {
-  text-align: center;
-  padding-top: 20px; 
+.nav {
+  padding-top: 10px; 
 }
-nav ul{
-  display: inline-block;
+.nav .n-ul{
+  width: 180px; 
   margin: 0 auto;
 }
-nav li {
+.nav li {
   float: left;
-  padding: 5px 10px;
+  width: 60px;
+  padding: 15px 0;
 }
+
 /*个人经历*/
-section {
-  width: 70%;
-  margin: 50px auto;
+.experience {
+  width: 90%;
+  margin: 0 auto;
+  padding: 50px 0; 
 }
 
 /*名字*/
 .e-name {
   float: left;
-  margin: 60px 0 0 120px;
+  margin: 60px 0 0 200px;
 }
 .e-name .link {
   position: absolute;
@@ -87,85 +89,87 @@ section {
 }
 /*树形图*/
 .e-tree {
-  min-height: 200px;
+  min-height: 280px;
 }
 /*树形图第一层*/
 .e-layer1 .avatar {
   float: right; 
   padding: 5px;
-  margin-right: 50px;
-  background: #5ab632;
-  border-radius: 50%;
+  margin-right: 150px;
   vertical-align: middle;
 }
-
 /*树形图第二层*/
 .e-layer2 {
-  position: relative;
+  height: 200px;
 }
 .e-layer2 .mine {
-  position: absolute;
-  width: 182px;
+  float: left; 
+  border-right: 1px solid #5ab632;
   height: 100%;
-  border-right: 2px solid #5ab632;
+  width: 200px;
+  margin: 0 100px 0 60px; 
 }
+.e-layer2 .content {
+  display: table-cell; 
+  *display: inline-block; 
+  width: 2000px; 
+  *width: auto; 
+  padding: 10px;
+  border: 3px solid #5ab632;
+  border-radius: 10px;
+  box-shadow: 1px 10px 10px #ddd; 
+
+}
+
 .e-layer2 .mine .date {
-  margin-top: 40px;
   font-weight: normal;
   font-size: 22px;
   color: #5ab632;
 }
 .e-layer2 .mine .school {
-  margin-top: 5px; 
   font-size: 22px;
   color: #333;
 }
 .e-layer2 .mine .big-mark {
   position: absolute;
-  top: 45px;
-  left: 152px;
+  margin: -60px 0 0 174px;
   width: 60px;
   height: 60px;
   border-radius: 50%;
-  background: url('../img/icon01.gif');
+  background: url('../img/icon01.png');
 }
 .e-layer2 .mine .small-mark {
   position: absolute;
-  top: 50px;
-  left: 175px;
+  margin: -18px 0 0 193px;
   width: 15px;
   height: 14px;
   border-radius: 50%;
-  background: url('../img/icon02.gif');
-}
-.e-layer2 .content {
-  width: 500px;
-  padding: 10px;
-  margin-left: 280px; 
-  border: 3px solid #5ab632;
-  border-radius: 10px;
-  box-shadow: 1px 10px 10px #ddd; 
+  background: url('../img/icon02.png');
 }
 .e-layer2 .content li {
   margin: 5px 0;
+  min-height: 50px;
   color: #333;
 }
 .e-layer2 .content li h2 {
-  display: inline-block;
+   font-size: 18px;
+   float: left; 
+   margin-right: 20px;
 }
-.e-layer2 .content li span {
-  display: inline-block;
+.e-layer2 .content li .c-right {
   font-size: 16px;
-  margin: -23px 0 0 20px;
+  display: table-cell; 
+  *display: inline-block; 
+  width: 2000px; 
+  *width: auto; 
 } 
+
 /*页脚*/
-footer {
-  margin: 100px;
+.footer {
   text-align: center;
+  margin: 50px 0;
 }
-footer span {
+.footer span {
   font-size: 14px;
   color: #333;
 }
-
-
