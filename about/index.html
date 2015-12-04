@@ -2,110 +2,80 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>huanglirui</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-  <link rel="stylesheet" href="../css/index.css">
+  <title>huanglirui-resume</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+  <link rel="stylesheet" href="../css/about.css">
 </head>
 <body>    
   <!-- 容器 -->
   <div class="container">
-    <!-- 导航 -->
-    <div class="nav">
-      <ul class="n-ul clearfix">
-        <li><a href="/">home</a></li>
-        <li><a href="/archives">archives</a></li>
-        <li><a href="/about">resume</a></li>
-      </ul>
-    </div>
-    <!-- 主体 -->
-    <div class="experience">
-      <!-- 名字 -->
-      <div class="e-name">
-        <ul class="link clearfix">
-          <li><a href="https://github.com/huanglirui"><img src="img/github.png" alt="github" height="25" title="github"></a></li>
-          <li><a href="http://weibo.com/3260115260"><img src="img/weibo.png" alt="微博" height="25" title="微博"></a></li>
+    <div class="resume">
+      <div class="r-items">
+        <ul>
+          <li>
+            <div class="r-item-info">
+              <div>
+                <h1>求职方向:</h1>
+                 <p>Web前端开发</p>
+              </div>
+              <div>
+                <h1>工作状态:</h1>
+                 <p>无</p>
+              </div>
+              <div>
+                <h1>联系方式:</h1>
+                 <p>tel:13388009872</p>
+              </div>
+              <div>
+                <h1>期望工作城市:</h1>
+                 <p>成都、北京、深圳</p>
+              </div>
+            </div>
+          </li>
+          <li>
+            <div class="r-item-skill">
+              <p><i></i>能够根据项目的设计图切出相应的素材。</p>
+              <p><i></i>通过html+css完成静态页面的布局。并兼容不同浏览器</p>
+              <p><i></i>精通javascript和jQuery，能够通过面向过程和面向对象的形式写出精简、高效的代码，并能与后台人员进行配合。</p>
+              <p><i></i>能够熟练使用html5+css3的新特性。</p>
+              <p><i></i>能够使用sass+compass写出优美和便于维护的css代码。</p>
+              <p><i></i>能够使用angularjs+bootstrap+express开发项目。</p>
+              <p><i></i>能够熟练使用Yeoman、Grunt、Gulp、Bower等前端自动化工具。</p>
+              <p><i></i>熟悉nodejs，了解java。</p>  
+            </div>
+          </li>
+          <li>
+            <div class="r-item-project">
+              <h2>提示: 如要看作品详细，请到<a href="https://www.github.com/huanglirui">github仓库查看</a></h2>
+              <p><i></i><a href="">博客系统</a></p>
+              <p><i></i><a href="">实时聊天室</a></p>
+              <p><i></i><a href="">jQuery源码剖析</a></p>
+              <p><i></i><a href="">商城</a></p>
+            </div>
+          </li>
+          <li>
+            <div class="r-item-hobby">
+              <img src="../img/hobby.jpg" alt="">
+            </div>
+          </li>
         </ul>
-        <h1>
-          <b>Huang</b><b class="green">LiRui</b>
-        </h1>
       </div>
-      <!-- 树形 -->
-      <!-- 第一层 -->
-      <div class="e-tree e-layer1">
-        <div class="avatar"><img src="img/huanglirui.png" alt="" height="160"></div>
+      <div class="r-buttons">
+        <ul>
+          <li data-id='1' class="active">信息</li>
+          <li data-id='2'>技能</li>
+          <li data-id='3'>作品</li>
+          <li data-id='4'>爱好</li>
+        </ul>
       </div>
-      <!-- 第二层 -->
-      <div class="e-tree e-layer2">
-        <div class="mine">
-          <h1 class="date">2012-至今</h1>
-          <p class="school">天津城建大学</p>
-          <p class="big-mark"></p>
-        </div>  
-        <div class="content">
-          <ul>
-            <li>
-              <h2>经历:</h2>
-              <div class="c-right"><span>大学开始的经历大学开始的经历大学开始的经历大学开始的经历大学开始的经历大学开始的经历大学开始的经历大学开始的经历大学开始的经历大学开始的经历大学开始的经历</span></div>
-            </li>
-            <li>
-              <h2>感想:</h2>
-              <div class="c-right"><span>感想一下收获的东西感想一下收获的东西感想一下收获的东西感想一下收获的东西感想一下收获的东西感想一下收获的东西</span></div>
-            </li>
-            <li>
-              <h2>反思:</h2>
-              <div class="c-right"><span>哪些缺点哪些缺点哪些缺点哪些缺点哪些缺点哪些缺点哪些缺点哪些缺点哪些缺点哪些缺点</span></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <!-- 第二层 -->
-      <div class="e-tree e-layer2">
-        <div class="mine">
-          <h1 class="date">未完待续...</h1>
-          <p class="small-mark"></p>
-        </div>  
-        <div class="content">
-          <ul>
-            <li>
-              <h2>经历:</h2>
-              <div class="c-right"><span>未完待续...</span></div>
-            </li>
-            <li>
-              <h2>感想:</h2>
-              <div class="c-right"><span>未完待续...</span></div>
-            </li>
-            <li>
-              <h2>反思:</h2>
-              <div class="c-right"><span>未完待续...</span></div>
-            </li>
-          </ul>
-        </div>
-      </div>
-       <!-- 第二层 -->
-      <div class="e-tree e-layer2">
-        <div class="mine">
-          <h1 class="date">未完待续...</h1>
-          <p class="small-mark"></p>
-        </div>  
-      </div>
-       <!-- 第二层 -->
-      <div class="e-tree e-layer2">
-        <div class="mine">
-          <h1 class="date">未完待续...</h1>
-          <p class="small-mark"></p>
-        </div>  
-      </div>
-    </div>  
-  </div>
-  <div class="footer">
-    <span>2015 <a href="/">HuangLiRui</a> & design by <a href="/">HuangLiRui</a></span><br />
-    <span>tel: 13388009872 qq: 378337449</span>
-  </div>   
-  
+    </div>
+  <div>   
+  <!-- 头像 -->
+  <div class="avatar"><img src="../img/huang.png" height="100" alt=""></div>
+  <!--遮罩-->
+  <div class="shadow"></div>
 
+<script src="../js/about.js"></script>
 </body>
 </html> 
-  
-   
-  
 

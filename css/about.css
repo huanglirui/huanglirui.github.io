@@ -1,0 +1,172 @@
+/*浏览器样式重置*/
+* {
+  margin: 0;
+  padding: 0;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+img {
+  border: none;
+}
+/*html、body*/
+html, body {
+  height: 100%;
+  font-family: 'Microsoft YaHei';
+  font-size: 12px;
+}
+html {
+  overflow-y: scroll;
+}
+body {
+  background: url('../img/bg.png');
+}
+/*重用类*/
+.clearfix {
+  *zoom: 1;
+}
+.clearfix:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/*容器*/
+.container {
+  min-width: 960px; 
+  height: 100%;
+}
+.resume {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+/*简历选项*/
+.r-items {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+.r-items ul {
+  transition: all 0.5s ease;
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  height: 400%;
+}
+.r-items ul li {
+  width: 100%;
+  height: 25%;
+}
+/*简历选项-信息*/
+.r-item-info {
+  width: 50%;
+  position: absolute;
+  margin: 200px 0 0 30%;
+}
+.r-item-info div {
+  color: #444;
+  min-height: 100px;
+}
+.r-item-info h1 {
+  float: left;
+  margin-right: 200px;
+}
+.r-item-info p {
+  display: table-cell;
+  *display: inline-block;
+  width: 2000px;
+  *width: auto;
+  font-size: 20px;
+  padding-top: 3px; 
+}
+
+/*简历选项-技能*/
+.r-item-skill {
+  width: 70%;
+  position: absolute;
+  margin: 120px 0 0 20%;
+}
+.r-item-skill p {
+  color: #444;
+  font-size: 18px;
+  line-height: 50px;
+}
+.r-item-skill i {
+  position: absolute;
+  margin: 20px 0 0 -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5ab632;
+}
+/*简历选项-作品*/
+.r-item-project {
+  width: 70%;
+  position: absolute;
+  margin: 200px 0 0 30%;
+}
+.r-item-project h2 {
+   color: #5ab632;
+   font-size: 14px;
+   margin-bottom: 10px;
+}
+.r-item-project p a {
+  color: #444;
+  font-size: 14px;
+  line-height: 50px;
+}
+.r-item-project i {
+  position: absolute;
+  margin: 20px 0 0 -20px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #5ab632;
+}
+
+/*简历选项-爱好*/
+.r-item-hobby {
+  height: 100%;
+  width: 100%;
+  background: #000;
+}
+.r-item-hobby img {
+  display: block;
+  position: absolute;
+  margin: 100px 0 0 200px;
+}
+
+/*简历选项按钮*/
+.r-buttons {
+  position: absolute;
+  top: 250px;
+  right: 100px;
+}
+.r-buttons li {
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: #5ab632;
+  font-weight: bold;
+  cursor: pointer;
+}
+.r-buttons li.active {
+  border-radius: 50%;
+  color: #fff;
+  background-color: #000; 
+}
+
+ /*头像*/
+ .avatar {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  margin-left: -50px;
+ }
