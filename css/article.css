@@ -3,7 +3,9 @@
   margin: 0;
   padding: 0;
 }
-
+li {
+  list-style: none;
+}
 a {
   text-decoration: none;
 }
@@ -12,9 +14,6 @@ a:hover {
 }
 img {
   border: none;
-}
-li {
-  list-style: none;
 }
 /*html、body*/
 html, body {
@@ -57,21 +56,9 @@ body {
   padding: 15px 0;
 }
 /*文章列表*/
-.articles {
-  width: 50%;
+.article {
   min-height: 500px;
   padding: 20px;
-  margin: 10px auto;
-}
-.articles h2 {
-  padding: 10px 0;
-  color: #333;
-  margin-bottom: 30px;
-  border-bottom: 1px solid #fff; 
-}
-.articles ul li {
-  margin: 5px;
-  list-style: inside;
 }
 
 /*页脚*/
