@@ -11,6 +11,24 @@
           return document.querySelectorAll(selector);
     }
   };
+  //添加类名
+  function addClass (obj, className) {
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+    if (!obj.className.match(reg)) {
+      obj.className += ' ' + className;
+    } 
+  };
+  //移除类名
+  function removeClass (obj, className) {
+    var reg = new RegExp('(\\s|^)' + className + '(\\s|$)');
+    if (!className) {
+      obj.className = '';
+    } else {
+      if (obj.className.match(reg)) {
+        obj.className = obj.className.replace(reg, '');
+      }
+    }
+  };
 //鼠标滚轮事件
   var mouseScroll = function (obj, upfn, downfn) {
      if (obj.attachEvent) {
@@ -49,14 +67,17 @@
         index = 0,
         startTime = new Date(),
         moveFn = function () {
-          for(var i=0,len=rButtonsLi.length; i<len; i++){
-            rButtonsLi[i].className = '';
+          var animateds = document.querySelectorAll('.animated');
+          for(var i=0, len=rButtonsLi.length; i<len; i++){
+            removeClass(rButtonsLi[i]);
+            animateds[i] && ( removeClass(animateds[i], 'zoomIn') );
           }
-          rButtonsLi[index].className = 'active';
+          animateds[index] && addClass(animateds[index], 'zoomIn');
+          addClass(rButtonsLi[index], 'active');
           rItemsUl.style.top = (-index*100)+'%'; 
         };
 
-    rButtons.addEventListener('click', function (e) {
+    rButtons.addEventListener('mouseover', function (e) {
       var li = e.target;
       index = li.dataset.id - 1;
       moveFn();
@@ -64,7 +85,7 @@
 
     mouseScroll(window, function () {
       var endTime = new Date();
-      if ((endTime - startTime) <400 ) {
+      if ((endTime - startTime) <800 ) {
         return;
       }
       startTime = endTime;
@@ -75,7 +96,7 @@
       moveFn();
     }, function () {
       var endTime = new Date();
-      if ((endTime - startTime) <400 ) {
+      if ((endTime - startTime) <800 ) {
         return;
       }
       startTime = endTime;

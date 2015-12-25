@@ -22,10 +22,10 @@ html, body {
   font-size: 12px;
 }
 html {
-  overflow-y: scroll;
+  overflow: hidden;
 }
 body {
-  background: url('../img/bg.png');
+  color: #fff;
 }
 /*重用类*/
 .clearfix {
@@ -63,6 +63,15 @@ body {
   width: 100%;
   height: 25%;
 }
+.r-items ul li:nth-child(1) {
+  background: url('../img/b1.jpg');
+}
+.r-items ul li:nth-child(2) {
+  background: url('../img/b2.jpg');
+}
+.r-items ul li:nth-child(3) {
+  background: url('../img/b3.jpg');
+}
 /*简历选项-信息*/
 .r-item-info {
   width: 50%;
@@ -70,7 +79,6 @@ body {
   margin: 200px 0 0 30%;
 }
 .r-item-info div {
-  color: #444;
   min-height: 100px;
 }
 .r-item-info h1 {
@@ -93,7 +101,6 @@ body {
   margin: 120px 0 0 20%;
 }
 .r-item-skill p {
-  color: #444;
   font-size: 18px;
   line-height: 50px;
 }
@@ -103,7 +110,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #5ab632;
+  background-color: yellow;
 }
 /*简历选项-作品*/
 .r-item-project {
@@ -112,14 +119,16 @@ body {
   margin: 200px 0 0 30%;
 }
 .r-item-project h2 {
-   color: #5ab632;
-   font-size: 14px;
+   font-size: 16px;
    margin-bottom: 10px;
 }
-.r-item-project p a {
-  color: #444;
-  font-size: 14px;
+.r-item-project a {
+  color: #fff;
+  font-size: 16px;
   line-height: 50px;
+}
+.r-item-project a:hover {
+  color: #444;
 }
 .r-item-project i {
   position: absolute;
@@ -127,7 +136,7 @@ body {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: #5ab632;
+  background-color: yellow;
 }
 
 /*简历选项-爱好*/
@@ -153,14 +162,13 @@ body {
   height: 40px;
   text-align: center;
   line-height: 40px;
-  color: #5ab632;
   font-weight: bold;
   cursor: pointer;
 }
 .r-buttons li.active {
   border-radius: 50%;
-  color: #fff;
-  background-color: #000; 
+  background-color: #fff; 
+  color: #444;
 }
 
  /*头像*/
