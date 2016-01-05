@@ -64,10 +64,10 @@ body {
   height: 25%;
 }
 .r-items ul li:nth-child(1) {
-  background: url('../img/b1.jpg');
+  background: url('../img/b2.jpg');
 }
 .r-items ul li:nth-child(2) {
-  background: url('../img/b2.jpg');
+  background: url('../img/b1.jpg');
 }
 .r-items ul li:nth-child(3) {
   background: url('../img/b3.jpg');
