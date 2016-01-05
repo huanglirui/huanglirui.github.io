@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>3d-球、圆锥、圆柱</title>
+  <link rel="stylesheet" href="css/3d.css" />
+  <script src="js/sea.js" id="seajsnode"></script>
+  <script>
+    seajs.config({
+      // base: './js/',
+      // alias: {
+      //   main: 'main.js'
+      // }
+    });
+    seajs.use('main');
+  </script>
+</head>
+<body>
+  
+  <div class="scene">
+    <div class="s-con">
+      <ul class="words">
+        
+      </ul>
+    </div>
+    <div class="s-txt">
+      <a href="javascript:void(0);" class="close">X</a>
+      <p class="txt"></p>
+    </div>
+  </div>
+
+  <div class="buttons">
+    <div class="b-shape">
+      <a href="javascript:void(0);" class="ball" data-shape="ball">球</a>
+      <a href="javascript:void(0);" class="cone" data-shape="cone">圆锥</a>
+      <a href="javascript:void(0);" class="cylinder" data-shape="cylinder">圆柱</a>
+      <a href="javascript:void(0);" class="tcylinder" data-shape="tcylinder">扭曲圆柱</a>
+    </div>
+    <div class="b-toggle">
+      <a href="javascript:void(0);" class="open">展开</a>
+      <a href="javascript:void(0)" class="define">自定义文字</a>
+    </div>
+  </div>
+
+  <div class="model">
+    <a href="javascript:void(0);" class="m-close">X</a>
+    <h1 class="m-header">
+      请输入你想要的文字（建议50-350）
+    </h1>
+    <div class="m-body">
+      <textarea name="" class="textarea" cols="30" rows="10"></textarea>
+    </div>
+    <div class="m-footer">
+      <a href="javascript:void(0);" class="submit">提交</a>
+      <a href="javascript:void(0);" class="reset">重置</a>
+    </div>
+  </div>
+
+</body>
+</html>
